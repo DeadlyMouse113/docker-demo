@@ -8,6 +8,8 @@ docker demo
 
 
 ## General
+| Text |
 Docker Image = the actual package, application with configuration.
 Docker Container = start the applicatoin, will create a continer.
+| Text |
 
