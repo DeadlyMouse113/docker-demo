@@ -2,5 +2,10 @@
 docker demo
 
 ## Links
-- https://hub.docker.com/
 - https://www.youtube.com/watch?v=3c-iBn73dDE
+- https://hub.docker.com/
+- https://docs.docker.com/
+
+
+## General
+
