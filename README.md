@@ -10,5 +10,7 @@ docker demo
 ## General
 * Docker Image = the actual package, application with configuration.
 * Docker Container = start the applicatoin, will create a continer.
+* Docker virtualize the applications layer. Much smaller than a VM, much faster.
+* Container use the host OS kernal.
 
 
