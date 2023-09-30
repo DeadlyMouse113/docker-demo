@@ -14,10 +14,10 @@ docker demo
 * Container use the host OS kernal.
 
 ## Docker Installation
-Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
-To install the latest version, run:
-Start Docker.
-Verify that the Docker Engine installation is successful by running the hello-world image.
+* Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
+* To install the latest version.
+* Start Docker.
+* Verify that the Docker Engine installation is successful by running the hello-world image.
  ~~~
 $ sudo yum install -y yum-utils
 $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
