@@ -14,6 +14,6 @@ docker demo
 * Container use the host OS kernal.
 
 ## Docker Installation
-{sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin}
+ ``` sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 
