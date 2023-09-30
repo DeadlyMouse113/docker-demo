@@ -93,4 +93,10 @@ docker demo
  ENV <name> <value>
 ~~~
 
+## Conatiner Port vs Host Port
+* Multiple containers can run on your host machine.
+* Your laptop has only certain ports available.
+* Conflict when same port on host machine.
+* You need port binding between host and container.
+
 
