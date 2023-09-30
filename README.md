@@ -14,6 +14,16 @@ docker demo
 * Container use the host OS kernal.
 
 ## Docker Installation
- ~~~  sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin ~~~ 
+Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
+To install the latest version, run:
+Start Docker.
+Verify that the Docker Engine installation is successful by running the hello-world image.
+ ~~~
+$ sudo yum install -y yum-utils
+$ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+$ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+$ sudo systemctl start docker
+$ sudo docker run hello-world
+~~~ 
 
 
