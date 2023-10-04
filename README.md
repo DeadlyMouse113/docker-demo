@@ -26,8 +26,18 @@ docker demo
  sudo systemctl start docker
  sudo docker run hello-world
 ~~~
-## Docker Basic commands
+## Docker Demo Project
+### Flow
+![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/0bf831ea-670c-4ff0-a4b4-def84eb8d1f1)
 
+### Step 1 - Software Development
+![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/3809ab43-d5eb-4e76-b52e-641430144137)
+
+### Step 2 - 
+Note: 1h 13min
+
+
+## Docker Basic commands
 ### Container Management
 ~~~
  docker create <image> [command]
