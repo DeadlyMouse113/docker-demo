@@ -14,6 +14,7 @@ docker demo
 * Docker Container = start the applicatoin, will create a continer.
 * Docker virtualize the applications layer. Much smaller than a VM, much faster.
 * Container use the host OS kernal.
+* Docker Compose takes care of creating a common Network.
 
 ## Docker Installation
 * Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
