@@ -70,7 +70,6 @@ docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG
 ~~~
 *** 
 Note: Change the ip of the ME_CONFIG_MONGODB_URL to the ip of your instance or to 'localhost'.
-I prefer to set an ip so that I could access mongo-express from any device within my network.
 ***
 5. Check mongodb and mongo-express from a browser
 ~~~  
