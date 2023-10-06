@@ -1,7 +1,7 @@
 # docker-demo
 docker demo
 
-This demo is done on Rocky Linux 9.
+This demo is done on Rocky Linux 9 in a virtual lab.
 
 ## Demo App
 - https://gitlab.com/nanuchi/techworld-js-docker-demo-app
