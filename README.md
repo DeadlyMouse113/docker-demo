@@ -47,8 +47,6 @@ sudo systemctl start docker
 sudo docker run hello-world
 ~~~
 ## Docker Demo Project Steps
-Steps: README_myapp.md
-
 ### With docker
 1. Pull Images from Docker Hub
 ~~~
@@ -71,15 +69,27 @@ docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG
 *** 
 Note: Change the ip of the ME_CONFIG_MONGODB_URL to the ip of your instance or to 'localhost'.
 ***
-5. Check mongodb and mongo-express from a browser
+5. Check mongodb and mongo-express from a browser (disable firewall or open correct port on host if needed)
 ~~~  
 docker exec -it mongodb mongosh
 db.runCommand({hello:1})
+
+sudo systemctl disable firewalld
 http://<localhost - your ip>:8081
 ~~~
-6. disable/open firewall if needed - 'sudo systemctl disable firewalld')
+6. create user-account db and users collection in mongo-express
+   
+Step 6: Start your nodejs application locally - go to app directory of project
+
+npm install 
+node server.js
 
 
+Step 7: Access you nodejs application UI from browser
+
+http://localhost:3000
+
+### With Docker Compose
 
 
 
@@ -88,9 +98,12 @@ http://<localhost - your ip>:8081
 
 ### Flow
 ![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/0bf831ea-670c-4ff0-a4b4-def84eb8d1f1)
-
 ### Software Development
 ![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/3809ab43-d5eb-4e76-b52e-641430144137)
+#### With Docker
+![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/2eee0ff1-eaed-461f-b4f1-fa698fcc55f8)
+#### With Docker Compose
+![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/3afdff04-d7e1-4ec4-93cd-6a0378921e2f)
 
 ## Docker Basic commands
 ### Container Management
