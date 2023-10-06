@@ -1,6 +1,8 @@
 # docker-demo
 docker demo
 
+This demo is done on Rocky Linux 9.
+
 ## Demo App
 - https://gitlab.com/nanuchi/techworld-js-docker-demo-app
 
@@ -66,7 +68,18 @@ docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB
 ~~~ 
 docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb -e ME_CONFIG_MONGODB_URL=mongodb://admin:pass@192.168.220.120:27017/db?ssl=false mongo-express  
 ~~~
-[^1]: This is the first footnote.
+*** 
+Note: Change the ip of the ME_CONFIG_MONGODB_URL to the ip of your instance or to 'localhost'.
+I prefer to set an ip so that I could access mongo-express from any device within my network.
+***
+* Check mongo
+~~~  
+docker exec -it mongodb mongosh
+db.runCommand({hello:1})
+~~~
+And access the web page
+(disable/open firewall if needed - 'sudo systemctl disable firewalld')
+
 
 
 
