@@ -102,6 +102,11 @@ node server.js
 ~~~
 9. Access you nodejs application UI from browser
 http://<localhost - ip>:3000
+Note: check following lines in server.js
+~~~
+// use when starting application locally
+let mongoUrlLocal = "mongodb://admin:password@192.168.220.120:27017";
+~~~
 ### With Docker Compose
 
 
