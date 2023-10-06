@@ -10,13 +10,18 @@ Note: 1h 44m
 - https://docs.docker.com/
 - https://dockerlabs.collabnix.com/docker/cheatsheet/
 
-
 ## General
 * Docker Image = the actual package, application with configuration.
 * Docker Container = start the applicatoin, will create a continer.
 * Docker virtualize the applications layer. Much smaller than a VM, much faster.
 * Container use the host OS kernal.
 * Docker Compose takes care of creating a common Network.
+
+### Conatiner Port vs Host Port
+* Multiple containers can run on your host machine.
+* Your laptop has only certain ports available.
+* Conflict when same port on host machine.
+* You need port binding between host and container.
 
 ### Persistent Volume
 * Folder in physical host file system is mounted into the virual file system of Docker.
@@ -112,10 +117,6 @@ Note: 1h 44m
  ENV <name> <value>
 ~~~
 
-## Conatiner Port vs Host Port
-* Multiple containers can run on your host machine.
-* Your laptop has only certain ports available.
-* Conflict when same port on host machine.
-* You need port binding between host and container.
+
 
 
