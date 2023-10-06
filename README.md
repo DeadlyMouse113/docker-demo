@@ -45,6 +45,8 @@ Note: 1h 44m
  sudo docker run hello-world
 ~~~
 ## Docker Demo Project
+Steps: README_myapp.md
+
 ### Flow
 ![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/0bf831ea-670c-4ff0-a4b4-def84eb8d1f1)
 
