@@ -38,14 +38,36 @@ docker demo
 * Start Docker.
 * Verify that the Docker Engine installation is successful by running the hello-world image.
  ~~~
- sudo yum install -y yum-utils
- sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
- sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
- sudo systemctl start docker
- sudo docker run hello-world
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl start docker
+sudo docker run hello-world
 ~~~
-## Docker Demo Project
+## Docker Demo Project Steps
 Steps: README_myapp.md
+
+### With docker
+* Pull Images from Docker Hub
+~~~
+docker image pull mongo
+docker image pull mongo-express
+docker images
+~~~
+* Create Docker network
+~~~
+docker network create mongo-network
+~~~
+* Start MongoDb
+
+* Start Mongo-Express
+
+
+
+
+
+
+
 
 ### Flow
 ![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/0bf831ea-670c-4ff0-a4b4-def84eb8d1f1)
