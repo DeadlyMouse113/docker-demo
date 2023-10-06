@@ -78,11 +78,14 @@ sudo systemctl disable firewalld
 http://<localhost - your ip>:8081
 ~~~
 6. create user-account db and users collection in mongo-express
-   
-Step 6: Start your nodejs application locally - go to app directory of project
+![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/db671607-e45c-44ad-b7c3-b592f3a2a38d)
 
-npm install 
-node server.js
+7. Install and start your nodejs application - go to app directory of project
+~~~
+sudo dnf install nodejs -y
+node -v
+npm install node server.js
+~~~
 
 
 Step 7: Access you nodejs application UI from browser
