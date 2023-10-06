@@ -18,6 +18,15 @@ Note: 1h 44m
 * Container use the host OS kernal.
 * Docker Compose takes care of creating a common Network.
 
+### Persistent Volume
+* Folder in physical host file system is mounted into the virual file system of Docker.
+* Data written in the virtual file system is replicated to the host file system adn vice versa.
+
+#### 3 Volume types
+* Host Volumes
+* Anonymouse Volumes
+* Named Volumes
+
 ## Docker Installation
 * Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
 * To install the latest version.
