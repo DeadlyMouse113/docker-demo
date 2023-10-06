@@ -1,6 +1,6 @@
 # docker-demo
 docker demo
-Note: 1h 44m
+
 ## Demo App
 - https://gitlab.com/nanuchi/techworld-js-docker-demo-app
 
