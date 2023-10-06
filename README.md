@@ -79,19 +79,29 @@ http://<localhost - your ip>:8081
 ~~~
 6. create user-account db and users collection in mongo-express
 ![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/db671607-e45c-44ad-b7c3-b592f3a2a38d)
-
-7. Install and start your nodejs application - go to app directory of project
+7. On the Rocky Instance, install git and clone the repository with the app.
+~~~
+sudo yum install git -y
+git clone <this repo>
+~~~
+7. Install prerequisites and nodjes on Rocky Linux
+(I have all modules under my root directory for this demo, not best practice for production)
 ~~~
 sudo dnf install nodejs -y
 node -v
-npm install node server.js
+
+npm install express
+npm install path
+npm install fs
+npm install mongodb
+npm install body parser
 ~~~
-
-
-Step 7: Access you nodejs application UI from browser
-
-http://localhost:3000
-
+8. Start de application
+~~~
+node server.js
+~~~
+9. Access you nodejs application UI from browser
+http://<localhost - ip>:3000
 ### With Docker Compose
 
 
