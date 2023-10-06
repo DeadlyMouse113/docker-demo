@@ -77,8 +77,9 @@ db.runCommand({hello:1})
 sudo systemctl disable firewalld
 http://<localhost - your ip>:8081
 ~~~
-6. create user-account db and users collection in mongo-express
-![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/db671607-e45c-44ad-b7c3-b592f3a2a38d)
+6. create my-db db and users collection in mongo-express
+![image](https://github.com/DeadlyMouse113/docker-demo/assets/121127124/68843ce0-9c31-4731-aa3d-b88c58a333de)
+
 7. On the Rocky Instance, install git and clone the repository with the app.
 ~~~
 sudo yum install git -y
