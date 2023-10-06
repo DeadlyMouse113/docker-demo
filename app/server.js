@@ -75,6 +75,6 @@ app.get('/get-profile', function (req, res) {
   });
 });
 
-app.listen(3000, function () {
+app.listen(http://192.168.220.120:3000, function () {
   console.log("app listening on port 3000!");
 });
