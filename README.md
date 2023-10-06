@@ -59,9 +59,14 @@ docker images
 docker network create mongo-network
 ~~~
 * Start MongoDb
-
+~~~
+docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo
+~~~  
 * Start Mongo-Express
-
+~~~ 
+docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb -e ME_CONFIG_MONGODB_URL=mongodb://admin:pass@192.168.220.120:27017/db?ssl=false mongo-express  
+~~~
+[^1]: This is the first footnote.
 
 
 
