@@ -50,21 +50,21 @@ sudo docker run hello-world
 Steps: README_myapp.md
 
 ### With docker
-* Pull Images from Docker Hub
+1. Pull Images from Docker Hub
 ~~~
 docker image pull mongo
 docker image pull mongo-express
 docker images
 ~~~
-* Create Docker network
+2. Create Docker network
 ~~~
 docker network create mongo-network
 ~~~
-* Start MongoDb
+3. Start MongoDb
 ~~~
 docker run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo
 ~~~  
-* Start Mongo-Express
+4. Start Mongo-Express
 ~~~ 
 docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e ME_CONFIG_MONGODB_SERVER=mongodb -e ME_CONFIG_MONGODB_URL=mongodb://admin:pass@192.168.220.120:27017/db?ssl=false mongo-express  
 ~~~
@@ -72,13 +72,13 @@ docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG
 Note: Change the ip of the ME_CONFIG_MONGODB_URL to the ip of your instance or to 'localhost'.
 I prefer to set an ip so that I could access mongo-express from any device within my network.
 ***
-* Check mongo
+5. Check mongodb and mongo-express from a browser
 ~~~  
 docker exec -it mongodb mongosh
 db.runCommand({hello:1})
+http://<localhost - your ip>:8081
 ~~~
-And access the web page
-(disable/open firewall if needed - 'sudo systemctl disable firewalld')
+6. disable/open firewall if needed - 'sudo systemctl disable firewalld')
 
 
 
