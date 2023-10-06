@@ -30,7 +30,7 @@ Note: 1h 44m
 #### 3 Volume types
 * Host Volumes
 * Anonymouse Volumes
-* Named Volumes
+* Named Volumes (best fit in production)
 
 ## Docker Installation
 * Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
